@@ -11,7 +11,8 @@ Your function must utilize recursion. It cannot contain any loops.
 count = 0
 
 
-def count_th(word, count=0):
+def count_th(word):
+    count = 0
     if not word:
         return 0
     else:
