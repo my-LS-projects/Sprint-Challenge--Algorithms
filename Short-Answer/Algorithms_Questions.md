@@ -11,7 +11,7 @@ a)  a = 0
       a = a + n * n
 ```
 
-O(1) because the time to complete does not go up as n increases. a is always bigger on the second attempt.
+O(n) because the time increases linearly. n^2 gets added to a every loop
 
 ```
 b)  sum = 0
@@ -22,7 +22,7 @@ b)  sum = 0
         sum += 1
 ```
 
-O(n) because the time to complete goes up proportianately to n.
+O(n log n) because the first loop will have a time of n, and the while loop will take less time the longer it goes.
 
 ```
 c)  def bunnyEars(bunnies):
@@ -32,7 +32,7 @@ c)  def bunnyEars(bunnies):
       return 2 + bunnyEars(bunnies-1)
 ```
 
-O(n^2) because the amount of calls increases exponentially based on bunnies
+O(n) because the amount of calls increases linearly based on bunnies
 
 ## Exercise II
 
